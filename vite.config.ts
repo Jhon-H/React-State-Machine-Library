@@ -9,7 +9,7 @@ export default defineConfig({
       entry: 'lib/index.ts',
       name: 'ReactStateMachine',
       formats: ['es'],
-      fileName: 'react-state-machine'
+      fileName: 'react-fsm-lite'
     },
     rollupOptions: {
       external: ['react'],

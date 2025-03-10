@@ -1,19 +1,19 @@
 {
-  "name": "react-state-machine",
+  "name": "react-fsm-lite",
   "private": false,
   "version": "1.0.0",
   "description": "Libreria simple y flexible para crear máquinas de estado finitas en aplicaciones React",
   "type": "module",
-  "module": "./dist/react-state-machine.js",
-  "main": "./dist/react-state-machine.umd.cjs",
+  "module": "./dist/react-fsm-lite.js",
+  "main": "./dist/react-fsm-lite.umd.cjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/react-state-machine.js",
-      "require": "./dist/react-state-machine.umd.cjs",
+      "import": "./dist/react-fsm-lite.js",
+      "require": "./dist/react-fsm-lite.umd.cjs",
       "types": "./dist/index.d.ts"
     }
   },

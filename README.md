@@ -7,19 +7,19 @@ Libreria simple y flexible para manejar maquinas de estado finitos en aplicacion
 Usando npm:
 
 ```bash
-npm install react-state-machine
+npm install react-fsm-lite
 ```
 
 Usando yarn:
 
 ```bash
-yarn add react-state-machine
+yarn add react-fsm-lite
 ```
 
 En tu proyecto React:
 
 ```javascript
-import { useFiniteStateMachine } from 'react-state-machine';
+import { useFiniteStateMachine } from 'react-fsm-lite'
 ```
 
 ## Ejemplo
@@ -50,7 +50,7 @@ const states: StatesFSM = {
   [States.AWAITING_PAYMENT]: {
     events: {
       ENTER_PRODUCT_ID: {
-        guard: (payload: { inserted: number; required: number }) => {
+        guard: (payload: { inserted: number, required: number }) => {
           if (payload.inserted >= payload.required) {
             return States.DISPENSING_PRODUCT
           }
